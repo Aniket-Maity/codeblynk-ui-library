@@ -1,0 +1,12 @@
+.input {
+  border-width: var(--input-border-width, 1px);
+  border-bottom-width: var(--input-border-b-width, 4px);
+  border-color: var(--input-border-col, var(--color-secondary, #051367));
+  @apply appearance-none rounded w-full py-2 px-3 pt-3 pb-3 text-black mt-t leading-tight focus:outline-none focus:bg-neutral-light;
+}
+.input:focus {
+  border-color: var(--input-border-focus-col, var(--color-secondary, #051367));
+}
+.input:disabled {
+  @apply border-text-primary;
+}

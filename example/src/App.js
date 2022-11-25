@@ -1,10 +1,13 @@
 import React from 'react'
-
-import { ExampleComponent } from 'codeblynk-ui-library'
+import { Button } from 'codeblynk-ui-library'
 import 'codeblynk-ui-library/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div>
+      <Button>Hello</Button>
+    </div>
+  )
 }
 
 export default App

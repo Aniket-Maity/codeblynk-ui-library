@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+.input{
+    border-width: 1px;
+    border-color: black;
+    @apply appearance-none rounded w-full p-3 text-black focus:outline-none
+}
+@tailwind utilities;
+
