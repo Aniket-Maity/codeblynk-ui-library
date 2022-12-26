@@ -12,13 +12,10 @@ export default function Button({
       onClick={onClick}
       {...props}
       className={`focus:outline-none focus:ring focus:ring-offset-2   ${
-        flat ? 'border-2 border-secondary' : 'bg-secondary'
+        flat
+          ? 'border-2 border-secondary hover:bg-secondary hover:text-white text-black '
+          : 'bg-secondary hover:bg-black text-white'
       } ${className}
-            ${
-              flat
-                ? 'active:bg-secondary text-primary'
-                : 'active:bg-black text-white'
-            }
             rounded-lg`}
     >
       <div className='px-2'>{children}</div>

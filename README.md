@@ -15,13 +15,15 @@ npm install --save codeblynk-ui-library
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'codeblynk-ui-library'
+import { Button } from 'codeblynk-ui-library'
 import 'codeblynk-ui-library/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export default function Example() {
+  return (
+    <div>
+      <Button>Welcome!</Button>
+    </div>
+  )
 }
 ```
 
